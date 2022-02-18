@@ -88,6 +88,5 @@ public class Main {
         tasks.stream()
                 .filter((t) -> t instanceof Deadline)
                 .sorted((a, b) -> a.getDescription().toLowerCase().compareTo(b.getDescription().toLowerCase()))
-                .forEach(System.out::println);
     }
 }
